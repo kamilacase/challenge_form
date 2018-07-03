@@ -1,16 +1,55 @@
-main, header, footer {
+main,
+header,
+footer {
     max-width: 800px;
     margin: 0 auto;
     background-color: black;
     color: white;
     padding: 2em;
+    font-family: 'Princess Sofia', cursive;
+    font-size: 1.3rem;
 }
-#passwordHelp{
+
+#passwordHelp {
     color: red;
 }
-body{
+
+body {
     background-image: url("../red1.jpg");
 }
-input{
+
+input {
     padding: 2em 0;
+}
+
+#country,
+#count {
+    margin-top: 2em;
+}
+
+#entete {
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+}
+
+h1 {
+    font-size: 4em;
+    color: rgb(188, 76, 192);
+    font-family: "liquid";
+}
+
+h2 {
+    color: rgb(187, 125, 125);
+}
+
+h3 {
+    color: yellowgreen;
+}
+
+@font-face {
+    font-family: "liquid";
+    src: url('../Liquid.ttf');
 }
