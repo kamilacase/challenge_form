@@ -1,1 +1,16 @@
-s
+main, header, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    padding: 2em;
+}
+#passwordHelp{
+    color: red;
+}
+body{
+    background-image: url("../red1.jpg");
+}
+input{
+    padding: 2em 0;
+}

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Form</title>
 </head>
 
@@ -14,7 +14,7 @@
         <header>
             <div class="row">
                 <div class="col">
-                    <img src="/home/mickael/Bureau/index.png" alt="logo fistlab">
+                    <img src="index.png" alt="logo fistlab">
                     <h1>FistLaB</h1>
                     <p>please complete thid form to login in FistLaB website</p>
                 </div>
@@ -23,73 +23,77 @@
 
         </header>
         <main>
-            <form>
+            <form id="comigOut">
                 <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Are you over 18 ?</label>
+                    <input type="checkbox" class="form-check-input" id="checkAge">
+                    <label class="form-check-label" for="checkAge">Are you over 18 ?</label>
                 </div>
 
                 <label for="fistname">Identity</label>
 
                 <div class="form-row">
                     <div class="col">
-                        <input type="text" class="form-control" id="firstname" placeholder="First name">
+                        <input type="text" class="form-control" required="" id="firstname" placeholder="First name">
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" id="lastname" placeholder="Last name">
+                        <input type="text" class="form-control" required="" id="lastname" placeholder="Last name">
                     </div>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                        <label class="input-group-text" for="country">Options</label>
                     </div>
-                    <select class="custom-select" id="inputGroupSelect01">
-    <option selected>Are you ousbec ...</option>
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
-</select>
+                    <select class="custom-select" required="" id="country">
+                        <option selected>Were do you come from ?</option>
+                        <option value="1">Uzbekistan</option>
+                        <option value="2">Syria</option>
+                        <option value="3">Libya</option>
+                        <option value="4">Liberia</option>
+                        <option value="3">Liechtenstein</option>
+                    </select>
                 </div>
+
+                <div class="form-group">
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="password" class="form-control" required="" id="password" placeholder="Password">
+                            <small id="passwordHelp" class="form-text text-muted"></small>
+                        </div>
+                        <div class="col">
+                            <input type="password" class="form-control" required="" id="passwordBis" placeholder="Confirm password">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">Email address</label>
+                    <input type="email" class="form-control" required="" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <button type="reset" class="btn btn-primary">clear</button>
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+
+
+            </form>
+
+        </main>
+
+        <footer>
+            <strong>©FistLaB</strong> game company. All rights reserved 2018
+        </footer>
     </div>
 
-    <div class="form-group">
-        <div class="form-row">
-            <label for="password">Password</label>
-        </div>
-        <div class="form-row">
-            <div class="col">
-                <input type="password" class="form-control" id="password" placeholder="Password">
-            </div>
-            <div class="col">
-                <input type="password" class="form-control" id="passwordBis" placeholder="Confirm password">
-            </div>
-        </div>
-
-    </div>
-    <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-row">
-        <div class="col">
-            <button type="reset" class="btn btn-primary">clear</button>
-        </div>
-        <div class="col">
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </div>
 
 
-    </form>
-
-    </main>
-
-
-
-
-
-    </div>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="js/script.js"></script>
